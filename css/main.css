@@ -5,38 +5,66 @@ body {
     font-size: 12pt;
 }
 
+@media (min-width: 0em) and (max-width: 63.9375em) {
+    #mainbody, #topbar {
+        width: 100%;
+    }
+}
+@media (min-width: 64em) {
+    #mainbody, #topbar {
+        width: 60em;
+    }
+}
+
 #mainbody {
     margin-left: auto;
     margin-right: auto;
-    width: 60em;
 }
 
 #topbar {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 60em;
     background: url("../images/header-bg.jpg") no-repeat;
     border-top: 10px solid #ff6600;
     margin-top: -10px;
     float: left;
 }
 
-#topbar.front-page {
-    height: 13em;
-}
-
 #topbar #logo {
   position: relative;
-  top: 85px;
-  left: 20px;
+}
+@media (min-width: 0em) and (max-width: 63.9375em) {
+    #topbar #logo {
+        width: 40em;
+        padding: 1em 0 1em 0.5em;
+    }
+}
+@media (min-width: 64em) {
+    #topbar.front-page {
+        height: 13em;
+    }
+    #topbar #logo {
+        top: 85px;
+        left: 20px;
+    }
 }
 
 #topbar #small-logo {
     position: relative;
-    left: 20px;
-    padding: 0.1em 0 0.1em 0;
-    height: 3em;
+}
+@media (min-width: 0em) and (max-width: 63.9375em) {
+    #topbar #small-logo {
+        width: 40em;
+        padding: 1em 0 1em 0.5em;
+    }
+}
+@media (min-width: 64em) {
+    #topbar #small-logo {
+        left: 20px;
+        padding: 0.1em 0 0.1em 0;
+        height: 3em;
+    }
 }
 
 #sidebar {
